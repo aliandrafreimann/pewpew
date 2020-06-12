@@ -21,8 +21,11 @@ require_once 'autoload.php';
 <div class="container">
     <div class="row">
         <div class="col"><h1>Products</h1></div>
-        <hr>
     </div>
+    <div>
+        <a href="cart.php" class="btn btn-primary">Cart</a>
+    </div>
+    <hr>
     <div class="row">
         <div class="col"><?php echo message(); ?></div>
     </div>
@@ -31,7 +34,7 @@ require_once 'autoload.php';
         <?php if (!empty($products)) : foreach ($products as $product) { ?>
             <div class="col-6">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="<?php echo $product['image']; ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $product['name']; ?></h5>
                         <p class="card-text"><?php echo $product['description']; ?></p>
@@ -42,7 +45,7 @@ require_once 'autoload.php';
         <?php } endif; ?>
     </div>
 
-    <?php print_r($_SESSION['cart']); ?>
+    <?php // print_r($_SESSION['cart']); ?>
 </div>
 
 <!-- Optional JavaScript -->
