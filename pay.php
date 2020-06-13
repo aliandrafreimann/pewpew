@@ -8,13 +8,13 @@ $fname = filter_input(INPUT_POST, 'fname', FILTER_SANITIZE_STRING);
 $lname = filter_input(INPUT_POST, 'lname', FILTER_SANITIZE_STRING);
 
 if ($action == 'pay' && $total == "0") {
-    $_SESSION['message'] = 'Total cant be empty';
+    $_SESSION['message'] = 'Koguse lahter ei tohi olla tühi';
     header('Location: cart.php');
 } elseif ($action == 'pay' && $fname == "") {
-    $_SESSION['message'] = 'Firstname cant be empty';
+    $_SESSION['message'] = 'Eesnime lahter ei tohi olla tühi';
     header('Location: cart.php');
 } elseif ($action == 'pay' && $lname == "") {
-    $_SESSION['message'] = 'Lastname cant be empty';
+    $_SESSION['message'] = 'Perekonnanime lahter ei tohi olla tühi';
     header('Location: cart.php');
 }
 ?>
