@@ -4,6 +4,7 @@ require_once 'autoload.php';
 
 $cart = $_SESSION['cart'];
 $total = 0;
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -15,7 +16,7 @@ $total = 0;
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Neljas</title>
 </head>
 <body>
 
@@ -64,8 +65,21 @@ $total = 0;
             </tr>
         </table>
     </div>
-
-    <?php print_r($_SESSION['cart']); ?>
+    <hr>
+    <form method="post" action="/pay.php">
+        <div>
+            <p>FIRSTNAME:</p><input type="text"  placeholder="Nimi" name="fname">
+            <p>LASTNAME:</p><input type="text" placeholder="Perekonnanimi" name="lname">
+            <p>EMAIL:</p><input type="email" placeholder="Email" name="email">
+            <p>PHONE NUMBER:</p><input type="text" placeholder="Telefon" name="number">
+            <input type="hidden" name="total" value="<?php echo $total; ?>">
+        </div>
+        <hr>
+        <div>
+            <a href="index.php" class="btn btn-primary">Back</a>
+            <button name="action" value="pay" class="btn btn-primary">Pay</button>
+        </div>
+    </form>
 </div>
 
 <!-- Optional JavaScript -->
