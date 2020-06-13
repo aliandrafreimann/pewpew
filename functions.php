@@ -8,5 +8,5 @@ function message () {
         return '<div class="alert alert-info">' . $message . '</div>';
     }
 
-    return; ''change''
+    return;
 }
