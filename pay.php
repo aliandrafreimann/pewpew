@@ -80,8 +80,8 @@ $fields = array(
     "VK_REF"         => "1234561",
     "VK_LANG"        => "EST",
     "VK_MSG"         => "PC parts",
-    "VK_RETURN"      => "https://hajusrakendus4.tak17pold.itmajakas.ee/from-bank.php?action=success",
-    "VK_CANCEL"      => "https://hajusrakendus4.tak17pold.itmajakas.ee/from-bank.php?action=cancel",
+    "VK_RETURN"      => "https://neljas.tak17freimann.itmajakas.ee/from-bank.php?action=success",
+    "VK_CANCEL"      => "https://neljas.tak17freimann.itmajakas.ee/from-bank.php?action=cancel",
     "VK_DATETIME"    => date(DATE_ISO8601),
     "VK_ENCODING"    => "utf-8",
 );
