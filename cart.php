@@ -68,10 +68,10 @@ $total = 0;
     <hr>
     <form method="post" action="/pay.php">
         <div>
-            <p>FIRSTNAME:</p><input type="text"  placeholder="Nimi" name="fname">
-            <p>LASTNAME:</p><input type="text" placeholder="Perekonnanimi" name="lname">
+            <p>EESNIMI:</p><input type="text"  placeholder="Nimi" name="fname">
+            <p>PEREKONANIMI:</p><input type="text" placeholder="Perekonnanimi" name="lname">
             <p>EMAIL:</p><input type="email" placeholder="Email" name="email">
-            <p>PHONE NUMBER:</p><input type="text" placeholder="Telefon" name="number">
+            <p>TELEFONINUMBER:</p><input type="text" placeholder="Telefon" name="number">
             <input type="hidden" name="total" value="<?php echo $total; ?>">
         </div>
         <hr>
