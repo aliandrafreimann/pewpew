@@ -62,6 +62,6 @@ return [
         'name' => 'BMW9',
         'price' => 9.9,
         'description' => 'Brand: BMW',
-        'image' => 'images/pic9.webp',
+        'image' => 'images/pic9.jpg',
     ]
 ];
