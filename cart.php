@@ -51,8 +51,8 @@ $total = 0;
                         <td><?php echo $item['name']; ?></td>
                         <td><input name="amount" class="form-control" value="<?php echo $item['amount']; ?>"></td>
                         <td><?php echo $price; ?></td>
-                        <td><button name="action" value="update" class="btn btn-primary">Update</button></td>
-                        <td><button name="action" value="delete" class="btn btn-danger">Delete</button></td>
+                        <td><button name="action" value="update" class="btn btn-primary">Uuenda</button></td>
+                        <td><button name="action" value="delete" class="btn btn-danger">Kustuta</button></td>
                     </tr>
                 </form>
             <?php } endif; ?>
@@ -76,8 +76,8 @@ $total = 0;
         </div>
         <hr>
         <div>
-            <a href="index.php" class="btn btn-primary">Back</a>
-            <button name="action" value="pay" class="btn btn-primary">Pay</button>
+            <a href="index.php" class="btn btn-primary">Tagasi</a>
+            <button name="action" value="pay" class="btn btn-primary">Maksa</button>
         </div>
     </form>
 </div>
