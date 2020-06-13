@@ -22,7 +22,7 @@ $total = 0;
 
 <div class="container">
     <div class="row">
-        <div class="col"><h1>Cart</h1></div>
+        <div class="col"><h1>KORV</h1></div>
         <hr>
     </div>
     <div class="row">
@@ -32,11 +32,11 @@ $total = 0;
 
         <table class="table">
             <tr>
-                <th>Name</th>
-                <th>Amount</th>
-                <th>Sum</th>
-                <th>Update</th>
-                <th>Delete</th>
+                <th>Nimi</th>
+                <th>Kogus</th>
+                <th>Summa</th>
+                <th>Uuenda</th>
+                <th>Kustuta</th>
             </tr>
             <?php if (!empty($cart)) : foreach ($cart as $item) { ?>
 

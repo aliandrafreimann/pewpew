@@ -20,10 +20,10 @@ require_once 'autoload.php';
 
 <div class="container">
     <div class="row">
-        <div class="col"><h1>Products</h1></div>
+        <div class="col"><h1>PRODUKTID</h1></div>
     </div>
     <div>
-        <a href="cart.php" class="btn btn-primary">Cart</a>
+        <a href="cart.php" class="btn btn-primary">Korv</a>
     </div>
     <hr>
     <div class="row">
@@ -38,7 +38,7 @@ require_once 'autoload.php';
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $product['name']; ?></h5>
                         <p class="card-text"><?php echo $product['description']; ?></p>
-                        <a href="add-to-cart.php?product=<?php echo $product['id']; ?>" class="btn btn-primary">Add to cart <?php echo $product['price']; ?></a>
+                        <a href="add-to-cart.php?product=<?php echo $product['id']; ?>" class="btn btn-primary">Lisa korvi <?php echo $product['price']; ?></a>
                     </div>
                 </div>
             </div>
